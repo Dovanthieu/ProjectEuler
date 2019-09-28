@@ -10,12 +10,8 @@ namespace ProjectEuler_6
     {
         static int SumSqrt(int n)
         {
-            int sumsqrt = 0;
-            for (int i = 1;i<=n;i++)
-            {
-                sumsqrt += i * i;
-            }
-            return (int)sumsqrt;
+            int sumsqrt = (n*(n + 1)*(2*n + 1)) / 6;
+            return sumsqrt;
         }
         static int SqrtSum(int n)
         {
