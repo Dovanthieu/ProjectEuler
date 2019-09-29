@@ -1,2 +1,2 @@
 # ProjectEuler
-ProjectEuler Solution with C# and Python
+Solution https://projecteuler.net/archives with C# and Python
