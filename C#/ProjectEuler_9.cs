@@ -8,10 +8,9 @@ namespace ProjectEuler_9
 {
     class Program
     {
-       
-        static void Main(string[] args)
+
+        static int FinMutiPythagorean(int n)
         {
-            int n = 1000;
             int i = 0;
             int j = n / 3;
             int a = 0;
@@ -25,7 +24,12 @@ namespace ProjectEuler_9
                         b = n - i - j;
                         c = j;
                     }
-            Console.WriteLine("Result ProjectEuler_9 is {0},{1},{2}", a,b,c);
+            return a * b * c;
+        }
+        static void Main(string[] args)
+        {
+            int n = 1000;
+            Console.WriteLine("Result ProjectEuler_9 is {0}", FinMutiPythagorean(n));
             Console.ReadKey();
 
         }
